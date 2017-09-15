@@ -20,7 +20,7 @@ class App extends Component {
       pilot: ""
     };
   }
-}
+
 
 // FORM: HANDLE INPUT CHANGES
 // handleNameChange below:
@@ -113,11 +113,7 @@ render() {
        );
      });
     return (
-      {/*
-      The App component needs the following:
-       jumbotron section, form section, vehicle cards section.
-       Your form will also need a header in which you will pass the state of the form upon submit.
-       */}
+
       <div className="App">
          <Jumbotron />
          <div className="form col">
@@ -139,6 +135,8 @@ render() {
            {vehicles}
          </div>
        </div>
-  }}
+     )
+  }
+}
 
 export default App;
